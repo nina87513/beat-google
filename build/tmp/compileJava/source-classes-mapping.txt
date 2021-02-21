@@ -2,12 +2,12 @@ WebPage.java
  WebPage
 Keyword.java
  Keyword
-GoogleQuery.java
- GoogleQuery
- ScoreData
 WordCounter.java
  WordCounter
 Result.java
  Result
 Main.java
  Main
+GoogleQuery.java
+ GoogleQuery
+ ScoreData

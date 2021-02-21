@@ -1,3 +1,8 @@
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -5,12 +10,6 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
-
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 
 public class GoogleQuery {
@@ -85,7 +84,7 @@ public class GoogleQuery {
         }
 
         List<ScoreData> scoreData = calculate(searchResult);
-        ArrayList<Result> finalResult = new ArrayList<Result>();
+        ArrayList<Result> finalResult = new ArrayList<>();
 
         Collections.sort(scoreData, Comparator.comparingInt(ScoreData::getScore).reversed());
 
